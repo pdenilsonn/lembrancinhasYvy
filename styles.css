@@ -157,6 +157,9 @@ footer {
     color: aliceblue;
 }
 
+footer img {
+    width: 2rem;
+}
 
 .redes {
     display: flex;
