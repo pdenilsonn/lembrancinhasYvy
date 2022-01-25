@@ -157,9 +157,6 @@ footer {
     color: aliceblue;
 }
 
-footer img {
-    width: 2rem;
-}
 
 .redes {
     display: flex;
@@ -167,8 +164,10 @@ footer img {
     margin-right: auto;
     justify-content: center;
     gap: 1rem;
-    
-    margin-bottom: 1rem; 
+}
+
+.redes img {
+    width: 2rem;
 }
 
 footer p {
