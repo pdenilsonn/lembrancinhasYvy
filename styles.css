@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+/* reset estilo */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+p {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #EECAAF;
+    height: 13.75rem;
+    padding: 2rem 2rem 0;
+    
+}
+/* estilo do título da página */
+.tituloPrincipal {
+    font-size: 2rem;
+    color: #39291E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 9.93rem;
+}
+
+/* estilo para todos os títulos da página */
+.titulo {
+    font-size: 2rem;
+    color: #39291E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
+
+/* estilo de cada bloco/informação */
+.caixaA {
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    
+}
+
+.caixaB {
+    margin-top: 1rem;
+    background: #EECAAF;
+    padding: 2rem 2rem;    
+    border-radius: 1rem;
+}
+
+/* conter as imagens  */
+.container {
+    margin-top: 2rem;
+    display: grid;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.container img {
+    width: 14rem;
+    border-radius: 0.5rem;
+}
+.bloco {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo {
+    background-color: #EECAAF;
+    width: 12rem;
+    height: 18rem;
+    margin-left: -10rem;
+    
+}
+
+.bloco img {
+    position: absolute;
+    width: 15rem;
+    border-radius: 0.5rem;
+    
+}
+
+/* apresentação dos valores */
+.containerPreco {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: rem;
+    color: #39291E;
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #EECAAF;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    margin-top: 1rem;
+}
+
+.precoPedido { 
+    font-size: 1rem;
+}
+
+.precoPedido span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.condicaoPedido {
+    font-size: 1.5;
+    font-weight: 400;
+}
+
+/* chamada para ação */
+.chamadaPraAcao {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+button {
+    background: rgb(87, 170, 87);
+    width: 12rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+button p {
+    margin: 0;
+    top: 0;
+    font-weight: 500;
+    color: white;
+
+}
+
+/* rodapé, informaçõe de contato */
+footer {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: rgb(32, 32, 32);
+    padding: 2rem 2rem;
+    width: auto;
+    color: aliceblue;
+}
+
+
+.redes {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 1rem;
+    width: 2rem;
+    margin-bottom: 1rem; 
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
