@@ -54,22 +54,30 @@ header {
 }
 
 /* conter as imagens  */
-.container {
-    margin-top: 2rem;
+.containerModelo {
     display: grid;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+
     gap: 1rem;
 }
-
-.container img {
-    width: 14rem;
-    border-radius: 0.5rem;
+.containerPolaroid {
+    position: relative;
+    width: 16rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
 }
-.bloco {
+
+.containerPolaroid img {
+    margin-top: 1rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+/* conter cores dos sabonetes */
+.containerCoresSabontes {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -84,7 +92,7 @@ header {
     
 }
 
-.bloco img {
+.containerCoresSabontes img {
     position: absolute;
     width: 15rem;
     border-radius: 0.5rem;
@@ -173,5 +181,87 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+
+/* telas maiores */
+@media screen and (min-width: 800px) {
+    /* título */
+    header {
+        background: #EECAAF;
+        height: 13.75rem;
+        padding: 4rem 16rem 0;
+    }
+    /* estilo do título da página */
+.tituloPrincipal {
+    font-size: 2.5rem;
+    color: #39291E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
+
+
+    /* estilo de cada bloco/informação */
+    .caixaA {
+        margin-top: 1rem;
+        padding: 4rem 8rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .caixaB {
+        margin-top: 1rem;
+        background: #EECAAF;
+        padding: 4rem 8rem;    
+        border-radius: 2rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* conter as imagens  */
+    .containerModelo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .containerPolaroid {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    
+    .containerPolaroid img {
+        margin-top: 1rem;
+        width: 19rem;
+        border-radius: 0rem;
+    }
+
+    /* conter cores dos sabonetes */
+    .containerCores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .containerCoresSabontes {
+        margin-top: 2rem;
+    }
+
+    .fundo {
+        background-color: #EECAAF;
+        width: 12rem;
+        height: 18rem;
+        margin-left: -10rem;
+        
+    }
+
+    .containerCoresSabontes img {
+        width: 15rem;
+        border-radius: 0.5rem; 
+    }
+
+
+  }
 
 
