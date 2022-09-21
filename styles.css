@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
 /* reset estilo */
 * {
     margin: 0;
@@ -8,49 +9,67 @@
     font: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     font-weight: normal;
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 
 header {
     background: #EECAAF;
     height: 13.75rem;
-    padding: 2rem 2rem 0;
-    
+
+
+    display: flex;
+    align-items: flex-end;
+
+
 }
+
 /* estilo do título da página */
 .tituloPrincipal {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #39291E;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin-top: 9.93rem;
+    font-weight: 800;
+
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* estilo para todos os títulos da página */
 .titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #39291E;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    
+
 }
 
 /* estilo de cada bloco/informação */
 .caixaA {
     margin-top: 1rem;
-    padding: 2rem 2rem;
-    
+    margin-bottom: 1rem;
+
+
 }
 
 .caixaB {
-    margin-top: 1rem;
     background: #EECAAF;
-    padding: 2rem 2rem;    
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+
+
+}
+
+.contentCaixa {
+    margin: 1.5rem 1rem;
+    padding: 2rem 0;
+
 }
 
 /* conter as imagens  */
@@ -62,6 +81,7 @@ header {
 
     gap: 1rem;
 }
+
 .containerPolaroid {
     position: relative;
     width: 16rem;
@@ -89,65 +109,100 @@ header {
     width: 12rem;
     height: 18rem;
     margin-left: -10rem;
-    
+
 }
 
 .containerCoresSabontes img {
     position: absolute;
     width: 15rem;
     border-radius: 0.5rem;
-    
+
 }
 
 /* apresentação dos valores */
-.containerPreco {
-    display: block;
+.cardePrecos {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    font-size: rem;
+    align-items: center;
+    gap: 1rem;
+
+    
+
+}
+.containerPreco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     color: #39291E;
     font-family: 'Poppins', sans-serif;
 
     background-color: #EECAAF;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     padding: 1rem;
 
-    margin-top: 1rem;
+    width: 14rem;
+    height: 8rem;
+    box-shadow: 3px 1px 3px #b49684;
+
+    
 }
 
-.precoPedido { 
-    font-size: 1rem;
+.precoPedido {
+    font-size: 0.85rem;
+    
 }
 
 .precoPedido span {
     font-size: 1.8rem;
     font-weight: 700;
+    margin-right: 0.1rem;
 }
 
 .condicaoPedido {
-    font-size: 1.5;
-    font-weight: 400;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: left;
 }
 
 /* chamada para ação */
 .chamadaPraAcao {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+
+    
+    
 }
+
+.chamadaPraAcao p {
+    font-weight: 600;
+}
+
 button {
     background: rgb(87, 170, 87);
     width: 12rem;
-    padding: 1rem;
-    text-align: center;
+    padding: 1.2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
     border-radius: 1rem;
     cursor: pointer;
 }
 
 button p {
-    margin: 0;
-    top: 0;
-    font-weight: 500;
+    
+    font-weight: 600;
     color: white;
 
 }
@@ -185,58 +240,86 @@ footer p {
 
 /* telas maiores */
 @media screen and (min-width: 800px) {
+
     /* título */
     header {
         background: #EECAAF;
         height: 13.75rem;
-        padding: 4rem 16rem 0;
+
+        display: flex;
+        align-items: flex-end;
+
+
+
     }
+
+    p {
+        font-size: 1rem;
+    }
+
     /* estilo do título da página */
-.tituloPrincipal {
-    font-size: 2.5rem;
-    color: #39291E;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    
-}
+    .tituloPrincipal {
+        font-size: 2rem;
+        color: #39291E;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        max-width: 80%;
+
+    }
 
 
     /* estilo de cada bloco/informação */
     .caixaA {
-        margin-top: 1rem;
-        padding: 4rem 8rem;
-        width: 60%;
+        padding: 2rem 0;
         margin-left: auto;
         margin-right: auto;
+
+        max-width: 80%;
+
     }
 
     .caixaB {
-        margin-top: 1rem;
+        padding: 2rem 0;
+
         background: #EECAAF;
-        padding: 4rem 8rem;    
-        border-radius: 2rem;
-        width: 60%;
+
+        border-radius: 1rem;
+
         margin-left: auto;
         margin-right: auto;
+
+        max-width: 80%;
+    }
+
+    .contentCaixa {
+        margin: 0 4rem
     }
 
     /* conter as imagens  */
     .containerModelo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 1.5rem;
+
     }
+
     .containerPolaroid {
         width: 20rem;
         background-color: white;
         border-radius: 1rem;
         text-align: center;
     }
-    
+
     .containerPolaroid img {
         margin-top: 1rem;
         width: 19rem;
-        border-radius: 0rem;
+        border-radius: 1rem;
     }
 
     /* conter cores dos sabonetes */
@@ -245,24 +328,47 @@ footer p {
         grid-template-columns: 1fr 1fr;
 
     }
+
+    /* contianer dos preços */
+
+    .cardePrecos {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        margin-top: 2rem;
+
+    }
+
+    .containerPreco {
+        width: 12rem;
+        height: 8rem;
+        box-shadow: 3px 1px 3px #b49684;
+    }
+
     .containerCoresSabontes {
         margin-top: 2rem;
     }
+
+
+
 
     .fundo {
         background-color: #EECAAF;
         width: 12rem;
         height: 18rem;
         margin-left: -10rem;
-        
+
     }
 
     .containerCoresSabontes img {
         width: 15rem;
-        border-radius: 0.5rem; 
+        border-radius: 0.5rem;
     }
 
 
-  }
-
-
+}
